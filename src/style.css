@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+a{
+  padding:3px 2px;
+}
+
+body{
+  font-family: "Comic Sans MS";
+} 
+
+@layer base {
+  h1 {
+    @apply text-[42px] text-center text-gray-700 mb-12;
+  }
+  h2{
+    @apply   text-2xl text-gray-600; 
+  }
+  p {
+    @apply text-[13px] text-gray-600 tracking-widest leading-6;
+  }
+}
+
+@layer components {
+  .nav_item {
+    @apply mx-2.5 text-gray-800 text-xl; 
+  }
+  .about_img{
+    @apply  h-[250px]  md:h-[300px] lg:px-0 mt-20 lg:w-[300px];
+  }
+  .about_title {
+    @apply mx-1  text-4xl text-gray-700;
+  }
+  .line{
+    @apply text-gray-700 border-b-2  border-gray-500  hover:border-gray-300 hover:hover:text-[#7b7771fb];
+  }
+  .photograph_li{
+    @apply w-[50%] md:w-[33.33%];
+  }
+  .photograph_img{
+    @apply p-3 w-[100%];
+  }
+  .works_item{
+    @apply text-5xl text-gray-700;
+  }
+  .album_li{
+    @apply p-3;
+  }
+  .blog_li{
+    @apply px-3 py-5;
+  }
+.blog_img{
+  @apply aspect-[3/2.6] py-5;
+  }
+  .footer{
+    @apply border-t-2;
+  }
+  .footer_li{
+    @apply text-gray-700 px-3 hover:text-[#7b7771fb];
+  }
+  .contact_content{
+    @apply text-[16px];
+  }
+  .paw_icon{
+    @apply text-[32px] mx-2;
+  }
+.icon{
+  @apply text-2xl text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[26px];
+  }
+}
+
+.nav_item::after {
+  content: '';
+  width: 0px;
+  height: 1.2px;
+  background: #7b7771fb;
+  padding-top: 2px;
+  transition: 300ms;
+}
+
+.nav_item:hover::after {
+  display: block;
+  width: 100%;
+}

@@ -5,20 +5,24 @@
 *{
   box-sizing: border-box;
 }
-a{
-  padding:3px 2px;
-}
 
 body{
-  font-family: "Comic Sans MS";
+  font-family: "Comic Sans MS",'M PLUS Rounded 1c';
 } 
+a{
+  padding:5px 3px;
+}
+
 
 @layer base {
   h1 {
-    @apply text-[42px] text-center text-gray-700 mb-12;
+    @apply text-[42px] text-center text-gray-600 mb-12 ;
   }
   h2{
     @apply   text-2xl text-gray-600; 
+  }
+  h6{
+    @apply   text-gray-600; 
   }
   p {
     @apply text-[13px] text-gray-600 tracking-widest leading-6;
@@ -26,26 +30,32 @@ body{
 }
 
 @layer components {
+  .section_layout{
+    @apply pt-36 px-[5%] lg:px-[10%];
+  }
   .nav_item {
-    @apply mx-2.5 text-gray-800 text-xl; 
+    @apply mx-2.5 text-gray-700 text-xl; 
+  }
+  .title{
+    @apply  bg-[#f4f0cb50] border-solid border-b-[8px] border-r-[5px] rounded-full  border-[#4e3a0d1f]	leading-5 pl-2 pr-1;
   }
   .about_img{
     @apply  h-[250px]  md:h-[300px] lg:px-0 mt-20 lg:w-[300px];
   }
   .about_title {
-    @apply mx-1  text-4xl text-gray-700;
+    @apply mx-1  text-3xl md:text-4xl leading-[40px] md:leading-[45px] md:tracking-widest text-gray-600;
   }
   .line{
     @apply text-gray-700 border-b-2  border-gray-500  hover:border-gray-300 hover:hover:text-[#7b7771fb];
   }
   .photograph_li{
-    @apply w-[50%] md:w-[33.33%];
+    @apply w-[50%] lg:w-[25%];
   }
   .photograph_img{
     @apply p-3 w-[100%];
   }
   .works_item{
-    @apply text-5xl text-gray-700;
+    @apply text-5xl text-gray-600;
   }
   .album_li{
     @apply p-3;
@@ -60,7 +70,7 @@ body{
     @apply border-t-2;
   }
   .footer_li{
-    @apply text-gray-700 px-3 hover:text-[#7b7771fb];
+    @apply text-gray-600 px-3 hover:text-[#7b7771fb];
   }
   .contact_content{
     @apply text-[16px];

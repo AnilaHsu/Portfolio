@@ -31,7 +31,7 @@ a{
 
 @layer components {
   .section_layout{
-    @apply pt-36 px-[5%] lg:px-[10%];
+    @apply pt-40 px-[5%] lg:px-[10%];
   }
   .nav_item {
     @apply mx-2.5 text-gray-700 text-xl; 
@@ -81,6 +81,12 @@ a{
 .icon{
   @apply text-2xl text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[26px];
   }
+.li_left{
+  @apply w-[10%] lg:w-[18%] text-right pt-5 pr-3 lg:pr-10;
+  }
+.li_right{
+  @apply w-[90%] lg:w-[78%] pt-5 pl-3 lg:pl-10 border-l-2 border-dotted ;
+  }
 }
 
 .nav_item::after {
@@ -92,7 +98,25 @@ a{
   transition: 300ms;
 }
 
-.nav_item:hover::after {
-  display: block;
-  width: 100%;
+@media screen and (min-width:768px) {
+  .nav_item:hover::after {
+    display: block;
+    width: 100%;
+  }
+  #sm_nav_list{
+    display: none;
+  }
 }
+@media screen and (max-width:768px) {
+  .nav_item:nth-child(-n+3):hover {
+    color:#8d8c89fb;
+  }
+  .nav_item:nth-last-child(-n+2):hover{
+    color:#a79c88fb;
+  }
+}
+
+.nav_block{
+  display: block;
+}
+

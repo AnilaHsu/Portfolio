@@ -13,18 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="style.js"></script>
 </head>
 
 <body class="min-w-[420px]">
-    <header class="fixed w-full h-[100px] bg-white z-[100]">
-        <div class="flex justify-between items-center  h-[100px] ">
+    <header class="fixed w-full h-[80px] bg-white z-[100]">
+        <div class="flex justify-between items-center h-[80px]">
             <a href="index.html">
-                <b class="logo mx-12 text-4xl font-semibold text-gray-700">
+                <h6 class="logo mx-12 text-4xl font-semibold text-gray-800">
                     anilahsu.
-                </b>
+                </h6>
             </a>
-            <nav class="nav h-[30px] flex items-center">
-                <ul class="flex items-center mx-6 md:mx-12">
+            <nav class="hidden mx-6 md:block md:mx-12">
+                <ul class="flex items-center">
                     <a href="about.html" class="nav_item">
                         <li>about</li>
                     </a>
@@ -37,7 +40,27 @@
                     <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
                         <li>blog</li>
                     </a>
-                    <a href="" class="nav_item text-[#885e2be6]">
+                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <button class="md:hidden text-[40px] px-10" id="nav_button">=</button>
+            <nav class="absolute top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden" id="sm_nav_list">
+                <ul class="pt-10 pb-20">
+                    <a href="about.html" class="nav_item">
+                        <li>about</li>
+                    </a>
+                    <a href="work.html" class="nav_item">
+                        <li>work</li>
+                    </a>
+                    <a href="album.html" class="nav_item">
+                        <li>album</li>
+                    </a>
+                    <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
+                        <li>blog</li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
                         <li>contact</li>
                     </a>
                 </ul>
@@ -51,33 +74,32 @@
                 <img src="../photograph/mainVisual.jpg">
             </div>
             <div class="my-2 mx-6 text-center">
-                <p>I hope that I can share more knowledge and technology through writing, 
+                <p class="text-[8px] md:text-[12px]">I hope that I can share more knowledge and technology through writing,
                     and record the beautiful corners of the world through photography.</p>
             </div>
         </section>
-        
-        <section class="about section_layout lg:flex lg:flex-wrap md:px-20 lg:justify-center">
+
+        <section class="about pt-12 px-[5%] lg:pt-32 lg:px-[10%] lg:flex lg:flex-wrap md:px-20 lg:justify-center">
             <div class="  flex justify-end px-[5%] w-full lg:w-auto ">
                 <img src="../photograph/about.jpg" class=" about_img hidden lg:block">
                 <img src="../photograph/about1.jpg" class="about_img lg:hidden">
             </div>
 
-            <div class="px-[5%]">
+            <div class="px-[5%] pb-12">
                 <div class="mt-12 lg:mt-0">
                     <b class="about_title">わ</b>
                     <b class="about_title">た</b>
                     <b class="about_title">し</b>
-                <br>
-                    <b class="mx-1  pr-8 md:pr-12"></b>
+                    <br>
+                    <b class="mx-1 pr-12 md:pr-[60px]"></b>
                     <b class="about_title">に</b>
                     <b class="about_title">つ</b>
                     <b class="about_title">い</b>
                     <b class="about_title">て</b>
                 </div>
-                <div class="">
+                <div>
                     <div>
-                        <!-- <hr class=" my-8 border-dashed"> -->
-                        <div class=" border-b-[2.5px]  my-6 "></div>
+                        <hr class="my-6 border-b-2 border-dashed">
                         <p>
                             ウェブサイトの開発とデザインをお楽しんで、
                             <br>
@@ -86,16 +108,14 @@
                         <p>
                             データ分析の経験を通じて問題の性質を探る。
                         </p>
-    
                         <p>
                             写真と文章を通して人生を記録することにより、
                             <br>
                             人生への情熱を保ちます。
                         </p>
                         <p class="mt-6 mb-12 about_content"> コーディング/ライティング/分析/写真</p>
-
                     </div>
-                    <div class=" text-right lg:text-left">
+                    <div class="text-right lg:text-left">
                         <a href="about.html">
                             <span class="line">
                                 more
@@ -105,7 +125,7 @@
                 </div>
             </div>
 
-            
+
         </section>
 
 
@@ -113,7 +133,7 @@
             <div class="lg:max-w-5xl">
                 <div class="flex justify-center">
                     <h1 class="title">
-                    works
+                        works
                     </h1>
                 </div>
                 <div class="felx justify-center">
@@ -143,7 +163,7 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class=" section_layout">
             <div class="flex justify-center">
@@ -151,7 +171,7 @@
                     <!-- <i class="fa-solid fa-paw paw_icon"></i> -->
                 </h1>
             </div>
-            
+
             <div>
                 <ul class="grid grid-cols-2 grod-rows-2 lg:grid-cols-4 lg:grid-rows-1 ">
                     <li class="album_li">
@@ -163,19 +183,19 @@
                     <li class="album_li">
                         <a href="bangkok.html">
                             <p> Bangkok | 2019.09 </p>
-                        <img src="../photograph/album_bangkok.jpg" alt="">
+                            <img src="../photograph/album_bangkok.jpg" alt="">
                         </a>
                     </li>
                     <li class="album_li">
-                       <a href="seattle.html">
-                        <p> Seattle | 2018.08 </p>
-                        <img src="../photograph/album_seattle.jpg" alt="">
-                       </a>
+                        <a href="seattle.html">
+                            <p> Seattle | 2018.08 </p>
+                            <img src="../photograph/album_seattle.jpg" alt="">
+                        </a>
                     </li>
                     <li class="album_li">
                         <a href="taiwan.html">
                             <p> Taiwan | 2021.12 </p>
-                        <img src="../photograph/album_taiwan.jpg" alt="">
+                            <img src="../photograph/album_taiwan.jpg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -194,7 +214,7 @@
                     <!-- <i class="fa-solid fa-paw paw_icon"></i> -->
                 </h1>
             </div>
-            
+
             <ul class=" grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4">
                 <li class="blog_li">
                     <a href="https://anila.me/posts/gtm-i/">
@@ -232,29 +252,29 @@
                 </a>
             </div>
         </section>
-        
+
         <section class="contact px-[5%] py-36 flex justify-center">
             <div class="bg-[#6954161e]	 w-[80%] rounded-3xl flex justify-center flex-col">
                 <div class="relative -top-10">
                     <div>
-                        <h1 class=" mb-2">contact</h1>
+                        <h1 class="mb-2">contact</h1>
                     </div>
                     <div class="flex flex-col items-center justify-center h-[250px] sm:h-[200px]">
                         <div class="py-5">
-                            <a href="">
+                            <a href="mailto:simple01281017@gmail.com">
                                 <i class="ti ti-mail icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/AnilaHsu">
                                 <i class="ti ti-brand-linkedin icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/AnilaHsu">
                                 <i class="ti ti-brand-github icon"></i>
 
                             </a>
-                            <a href="">
+                            <a href="https://twitter.com/AnilaHsu">
                                 <i class="ti ti-brand-twitter icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/anila_hsu/">
                                 <i class="ti ti-brand-instagram icon"></i>
                             </a>
                         </div>
@@ -287,7 +307,7 @@
                     <a href="https://anila.me/">
                         <li class="footer_li">blog</li>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/AnilaHsu">
                         <li class="footer_li">contact</li>
                     </a>
                 </ul>
@@ -295,5 +315,4 @@
         </div>
     </footer>
 </body>
-
 </html>

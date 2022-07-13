@@ -13,19 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="style.js"></script>
 </head>
 </head>
 
 <body class="min-w-[420px]">
-    <header class="fixed w-full h-[100px] bg-white z-[100]">
-        <div class="flex justify-between items-center  h-[100px] ">
+    <header class="fixed w-full h-[80px] bg-white z-[100]">
+        <div class="flex justify-between items-center h-[80px]">
             <a href="index.html">
                 <h6 class="logo mx-12 text-4xl font-semibold text-gray-800">
                     anilahsu.
                 </h6>
             </a>
-            <nav class="nav h-[30px] flex items-center">
-                <ul class="flex items-center mx-6 md:mx-12">
+            <nav class="hidden mx-6 md:block md:mx-12">
+                <ul class="flex items-center">
                     <a href="about.html" class="nav_item">
                         <li>about</li>
                     </a>
@@ -38,7 +41,27 @@
                     <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
                         <li>blog</li>
                     </a>
-                    <a href="" class="nav_item text-[#885e2be6]">
+                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <button class="md:hidden text-[40px] px-10" id="nav_button">=</button>
+            <nav class="absolute top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden" id="sm_nav_list">
+                <ul class="pt-10 pb-20">
+                    <a href="about.html" class="nav_item">
+                        <li>about</li>
+                    </a>
+                    <a href="work.html" class="nav_item">
+                        <li>work</li>
+                    </a>
+                    <a href="album.html" class="nav_item">
+                        <li>album</li>
+                    </a>
+                    <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
+                        <li>blog</li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
                         <li>contact</li>
                     </a>
                 </ul>
@@ -50,30 +73,29 @@
         <section class="section_layout flex flex-col items-center justify-center ">
             <div class="lg:max-w-5xl">
                 <div class="pb-12">
-                    <div class=" flex justify-center">
+                    <div class="flex justify-center">
                         <h1 class="title">about</h1>
                     </div>
                 </div>
 
-                <div class="flex items-center flex-col  md:flex-row">
+                <div class="flex items-center flex-col md:flex-row">
                     <img src="../photograph/anila1.JPG" alt="" class="w-[200px] md:mr-10 mt-5">
-                    <div class="flex flex-col items-center mt-5 md:block">
-
+                    <div class="flex flex-col items-center mt-5 mx-8 md:mx-6 md:block">
                         <p> Anila Hsu | Christian </p>
                         <br>
-                        <div class=" md:text-left">
+                        <div class="flex flex-col items-center text-center md:items-start md:text-left">
                             <p>
                                 Frontend Engineer / Writer /
                                 <br class="xs:hidden">
                                 Analyst / Photographer
                             </p>
-                            <div class=" border-b-2 border-dashed  my-2 w-[300px]  xs:w-[400px]"></div>
+                            <div class="border-b-2 border-dashed  my-2 w-[300px]  xs:w-[400px]"></div>
                             <p>
                                 React . Vue . JS . HTML .
-                                CSS . Tailwind . 
+                                CSS . Tailwind .
                                 <br class="xs:hidden">
                                 Bootstrap .
-                                <br class="hidden xs:block"> Python . SQL
+                                <br class="hidden xs:block"> Python . SQL . Git
                                 <br class="hidden sm:block">
 
                             </p>
@@ -88,24 +110,23 @@
                                 in the past, I will continue to challenge with curiosity and action.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section_layout ">
-            <div class="lg:max-w-5xl">
+        <section class="section_layout">
+            <div class="lg:px-20">
                 <div class="flex justify-center">
                     <h1 class="title">career</h1>
                 </div>
                 <div>
                     <ul>
-                        <li class=" flex justify-center">
-                            <div class="w-[30%] text-right pr-10 lg:pr-20">
-                                <h6>2022 year</h6>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2022</h6>
                             </div>
-                            <div class="w-[70%]">
+                            <div class="li_right">
                                 <h6>Data Analyst</h6>
                                 <p>
                                     1. Establish a flight database for the Health and Injury Insurance Department to
@@ -124,13 +145,14 @@
                                     <br>
                                     6. Work as an office Python lecturer and offer weekly programming courses.
                                 </p>
+                                <br>
                             </div>
                         </li>
-                        <li class=" flex justify-center pt-10">
-                            <div class="w-[30%] text-right pr-10 lg:pr-20">
-                                <h6>2021 year</h6>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2021</h6>
                             </div>
-                            <div class="w-[70%]">
+                            <div class="li_right">
                                 <h6>Internship</h6>
                                 <p>
                                     1. Use Vue.js to dynamically display the data predicted by the AI model on the web
@@ -138,13 +160,14 @@
                                     <br>
                                     2. Manage the development of ten members team collaborative project.
                                 </p>
+                                <br>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-10">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20 ">
-                                <h6>2020 year</h6>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2020</h6>
                             </div>
-                            <div class="w-[70%]">
+                            <div class="li_right">
                                 <h6>
                                     Assistant Professor
                                 </h6>
@@ -153,6 +176,7 @@
                                     <br>
                                     2. Assist professors in preparing courses and presentations.
                                 </p>
+                                <br>
                             </div>
                         </li>
                     </ul>
@@ -161,87 +185,88 @@
         </section>
 
         <section class="section_layout">
-            <div class="">
+            <div class="lg:px-20">
                 <div class="flex justify-center">
                     <h1 class="title">volunteering</h1>
                 </div>
                 <div>
                     <ul>
                         <li class="flex justify-center">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                                <h6>2021 year</h6>
+                            <div class="li_left">
+                                <h6>2021</h6>
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Court Justice of NTUT Judicial Branch
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20 ">
-                                <h6>2020 year</h6>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2020</h6>
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>Chief Financial Officer of NTUT Programming Club </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20 ">
+                        <li class="flex justify-center">
+                            <div class="li_left">
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Photographer of Students' Information Technology Conference [SITCON]
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right pr-10 lg:pr-20">
+                        <li class="flex justify-center">
+                            <div class="li_left">
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Student Representative/Student Council Parliamentarian of NTUT Student Parliament
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                                <h6>2019 year</h6>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2019 </h6>
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Congregation of Conference for Open Source Coders, Users and Promoters [COSCUP]
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right pr-10 lg:pr-20">
+                        <li class="flex justify-center">
+                            <div class="li_left">
                                 <h6></h6>
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Vice Officer of Humanities Department, NTUT Student Government
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20">
+                        <li class="flex justify-center">
+                            <div class="li_left">
 
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Coordinator/ Vice Coordinator of NTUT Student Government
                                 </p>
                             </div>
                         </li>
-                        <li class="flex justify-center pt-4">
-                            <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                                2016 year
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                2016
                             </div>
-                            <div class="w-[70%] font-semibold">
+                            <div class="li_right font-semibold">
                                 <p>
                                     Saxophone Leader of Concert Band,Taipei Municipal Shilin High School of Commerce
                                     [SLHS]
                                 </p>
+                                <br>
                             </div>
                         </li>
                     </ul>
@@ -250,90 +275,92 @@
         </section>
 
         <section class="section_layout">
-            <div class="flex justify-center">
-                <h1 class="title">certifications</h1>
-            </div>
-            <div>
+            <div class="lg:px-20">
+                <div class="flex justify-center">
+                    <h1 class="title">certifications</h1>
+                </div>
+
                 <ul>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                            <h6>2022 year </h6>
+                    <li class="flex justify-center">
+                        <div class="li_left">
+                            <h6>2022 </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>JLPT N3 (Credential ID: N3A096264T)</p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
+                    <li class="flex justify-center">
+                        <div class="li_left">
                             <h6>
-                                2021 year
+                                2021
                             </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Graduated with the first place,
                                 Department of Information & Financial Management,NTUT
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
+                    <li class="flex justify-center ">
+                        <div class="li_left">
                             <h6>
                             </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Property Insurance Representative (Credential ID:811764639)
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
+                    <li class="flex justify-center ">
+                        <div class="li_left">
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Microsoft Certified: Azure 900 (Credential ID: H750-9628)
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                            <h6>2020 year </h6>
+                    <li class="flex justify-center ">
+                        <div class="li_left">
+                            <h6>2020 </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Planner of Business Intelligence (Credential ID: GP0059100160)
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                            <h6>2019 year </h6>
+                    <li class="flex justify-center ">
+                        <div class="li_left">
+                            <h6>2019 </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Financial Markets and Professional Ethics (Credential ID: D280617592)
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
+                    <li class="flex justify-center ">
+                        <div class="li_left">
                             <h6></h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Personal Insurance Representative
                             </p>
                         </div>
                     </li>
-                    <li class="flex justify-center pt-4">
-                        <div class="w-[30%] text-right  pr-10 lg:pr-20">
-                            <h6>2016 year</h6>
+                    <li class="flex justify-center ">
+                        <div class="li_left">
+                            <h6>2016 </h6>
                         </div>
-                        <div class="w-[70%] font-semibold">
+                        <div class="li_right font-semibold">
                             <p>
                                 Second place in the 13th Taipei High School Theme Website Competition
                             </p>
+                            <br>
                         </div>
                     </li>
                 </ul>
@@ -341,12 +368,12 @@
         </section>
 
         <section class="section_layout">
-            <div class="px-10">
-                <div class="flex justify-center">
-                    <h1 class="title">story</h1>
-                </div>
+            <div class="flex justify-center">
+                <h1 class="title">story</h1>
+            </div>
+            <div class="sm:px-[50px] lg:px-[100px]">
                 <p>
-                    Hi, Hi I'm Anila! 
+                    Hi, Hi I'm Anila!
                     <br>
                     I am a girl who grew up in the country,
                     Since I was a child, I hoped to bring a better life to my family through education, so I was
@@ -355,27 +382,34 @@
                 <br>
                 <p>
                     After graduating from high school, I went to Taipei to study at Shilin High School of Commerce,
-                    Department of Data Processing, While studying and working part-time, I also actively participated in the Concert Band.
-                    During my Concert Band period, I participated in many national music flag competitions, performances
+                    Department of Data Processing, While studying and working part-time, I also actively
+                    participated in the Concert Band.
+                    During my Concert Band period, I participated in many national music flag competitions,
+                    performances
                     in on-campus and off-campus activities, and the opening of corporate events.
-                </p>  
+                </p>
                 <br>
                 <p>
-                    Later, the university was admitted to the first choice - Taipei University of Technology, Department
+                    Later, the university was admitted to the first choice - Taipei University of Technology,
+                    Department
                     of Information and Financial Management.
                     During college, in addition to studying hard, I also participated in the student government and
                     program-related communities to improve my soft and hard power.
-                </p>    
+                </p>
                 <br>
                 <p>
-                    In addition, I am also engaged in different internships and jobs, while exploring the direction of
+                    In addition, I am also engaged in different internships and jobs, while exploring the direction
+                    of
                     my future career. while learning Japanese. After college, I joined a digital financial insurance
-                    company and worked as a data analyst. In 2022, I decided to switch careers as a front-end engineer.
+                    company and worked as a data analyst. In 2022, I decided to switch careers as a frontend
+                    engineer.
                 </p>
                 <br>
                 <p>
                     In order to go to work in Japan, I concentrate on improving my Japanese and programming skills,
-                    continue to accumulate front-end technology and experience, and hope to make better products. At the same time, I will continue to operate my own blog, sorting out the knowledge and technology I have learned and sharing it with others. many more people.
+                    continue to accumulate front-end technology and experience, and hope to make better products. At
+                    the same time, I will continue to operate my own blog, sorting out the knowledge and technology
+                    I have learned and sharing it with others. many more people.
                 </p>
                 <br>
                 <p>
@@ -385,9 +419,6 @@
                     help more people!
                 </p>
                 <br>
-                    
-                
-
             </div>
         </section>
 
@@ -395,24 +426,24 @@
             <div class="bg-[#6954161e]	 w-[80%] rounded-3xl flex justify-center flex-col">
                 <div class="relative -top-10">
                     <div>
-                        <h1 class=" mb-2">contact</h1>
+                        <h1 class="mb-2">contact</h1>
                     </div>
                     <div class="flex flex-col items-center justify-center h-[250px] sm:h-[200px]">
                         <div class="py-5">
-                            <a href="">
+                            <a href="mailto:simple01281017@gmail.com">
                                 <i class="ti ti-mail icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/AnilaHsu">
                                 <i class="ti ti-brand-linkedin icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/AnilaHsu">
                                 <i class="ti ti-brand-github icon"></i>
 
                             </a>
-                            <a href="">
+                            <a href="https://twitter.com/AnilaHsu">
                                 <i class="ti ti-brand-twitter icon"></i>
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/anila_hsu/">
                                 <i class="ti ti-brand-instagram icon"></i>
                             </a>
                         </div>
@@ -444,7 +475,7 @@
                     <a href="https://anila.me/">
                         <li class="footer_li">blog</li>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/AnilaHsu">
                         <li class="footer_li">contact</li>
                     </a>
                 </ul>

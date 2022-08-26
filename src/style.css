@@ -10,7 +10,7 @@ body{
   font-family: "Comic Sans MS",'M PLUS Rounded 1c';
 } 
 a{
-  padding:5px 3px;
+  padding: 5px 3px;
 }
 
 
@@ -116,11 +116,14 @@ a{
   }
 }
 
-.nav_block{
+.nav_block {
   display: block;
 }
 
 .about_title,.about-content {
   font-family:'Hachi Maru Pop', cursive;
 }
-
+.reference-link {
+  color: #885e2be6;
+  padding: 0px;
+}

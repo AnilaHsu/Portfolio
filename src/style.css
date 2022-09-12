@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Comic Sans MS",'M PLUS Rounded 1c';
-} 
-a{
+body {
+  font-family: 'Jua', sans-serif;
+}
+
+a {
   padding: 5px 3px;
 }
 
@@ -18,83 +19,84 @@ a{
   h1 {
     @apply text-[42px] text-center text-gray-600 mb-12 ;
   }
-  h2{
-    @apply   text-2xl text-gray-600; 
-  }
-  h6{
-    @apply   text-gray-600; 
+  h2 {
+    @apply text-2xl text-gray-600; 
+  } 
+  h6 {
+    @apply  text-gray-600; 
   }
   p {
-    @apply text-[13px] text-gray-600 tracking-widest leading-6;
+    @apply text-[13px] md:text-[15px] text-gray-600 tracking-widest leading-6;
   }
 }
 
 @layer components {
   .section_layout{
-    @apply pt-40 px-[5%] lg:px-[10%];
+    @apply pt-40 px-[5%] lg:px-[8%];
   }
   .nav_item {
     @apply mx-2.5 text-gray-700 text-xl; 
   }
-  .title{
-    @apply  bg-[#f4f0cb50] border-solid border-b-[8px] border-r-[5px] rounded-full  border-[#4e3a0d1f]	leading-5 pl-2 pr-1;
+  .title {
+    @apply text-[36px] lg:text-[46px] bg-[#f4f0cb50] border-solid border-b-[8px] border-r-[5px] rounded-full  border-[#4e3a0d1f]	leading-5 pl-2 pr-1;
   }
   .about_img{
-    @apply  h-[250px]  md:h-[300px] lg:px-0 mt-20 lg:w-[300px];
+    @apply lg:px-0 w-[240px] md:w-[280px] lg:w-[320px];
   }
-  .about_title {
-    @apply mx-1  text-3xl md:text-4xl leading-[40px] md:leading-[45px] md:tracking-widest text-gray-600;
+  .index_about_title {
+    @apply mx-0.5 text-[26px] lg:text-[32px] leading-[40px] md:leading-[45px] md:tracking-widest text-gray-600;
   }
-  .line{
-    @apply text-gray-700 border-b-2  border-gray-500  hover:border-gray-300 hover:hover:text-[#7b7771fb];
+  .line {
+    @apply pb-0.5 text-gray-700 border-b-2 border-gray-400 hover:text-gray-500 hover:border-gray-300 ;
   }
-  .photograph_li{
+  .photograph_li {
     @apply w-[50%] lg:w-[25%];
   }
-  .photograph_img{
+  .photograph_img {
     @apply p-3 w-[100%];
   }
-  .works_item{
+  .works_item {
     @apply text-5xl text-gray-600;
   }
-  .album_li{
+  .album_li {
     @apply p-3;
   }
-  .blog_li{
+  .blog_li {
     @apply px-3 py-5;
   }
-.blog_img{
+.blog_img {
   @apply aspect-[3/2.6] py-5;
   }
-  .footer{
+  .footer {
     @apply border-t-2;
   }
-  .footer_li{
+  .footer_li {
     @apply text-gray-600 px-3 hover:text-[#7b7771fb];
   }
-  .contact_content{
+  .contact_content {
     @apply text-[16px];
   }
-  .paw_icon{
+  .paw_icon {
     @apply text-[32px] mx-2;
   }
-.icon{
+.icon {
   @apply text-2xl text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[26px];
   }
-.li_left{
-  @apply w-[10%] lg:w-[18%] text-right pt-5 pr-2 lg:pr-10;
+.li_left {
+  @apply w-[20%] lg:w-[30%] text-right pt-5 pr-3 lg:pr-10;
   }
-.li_right{
-  @apply w-[90%] lg:w-[78%] pt-5 pl-2 lg:pl-10 border-l-2 border-dotted ;
+.li_right {
+  @apply w-[80%] lg:w-[70%] pt-5 pl-5 pr-5 lg:pl-10 border-l-2 border-dotted ;
   }
 }
 
 .nav_item::after {
   content: '';
   width: 0px;
-  height: 1.2px;
+  height: 0.5px;
   background: #7b7771fb;
-  padding-top: 2px;
+  padding-top: 3.5px;
+  border-radius: 30%;
   transition: 300ms;
 }
 
@@ -111,18 +113,22 @@ a{
   .nav_item:nth-child(-n+3):hover {
     color:#8d8c89fb;
   }
-  .nav_item:nth-last-child(-n+2):hover{
+  .nav_item:nth-last-child(-n+2):hover {
     color:#a79c88fb;
   }
+}
+.logo {
+  letter-spacing: -0.2;
 }
 
 .nav_block {
   display: block;
 }
 
-.about_title,.about-content {
-  font-family:'Hachi Maru Pop', cursive;
+.index_about_title,.index_about-content {
+  font-family: 'Kosugi Maru', sans-serif;
 }
+
 .reference-link {
   color: #885e2be6;
   padding: 0px;

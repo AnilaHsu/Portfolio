@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="https://kit.fontawesome.com/d0012cad74.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/d0012cad74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yomogi&display=swap" rel="stylesheet">
+    <!-- english font fimaly -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- japanese font fimaly -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="style.js"></script>
 </head>
+
+
 <body class="min-w-[420px]">
     <header class="fixed w-full h-[80px] bg-white z-[100]">
         <div class="flex justify-between items-center h-[80px]">
             <a href="index.html">
-                <h6 class="logo mx-12 text-4xl font-semibold text-gray-800">
+                <h6 class="logo mx-6 md:mx-12 text-4xl font-semibold text-gray-800">
                     anilahsu.
                 </h6>
             </a>
@@ -38,7 +44,7 @@
                     <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
                         <li>blog</li>
                     </a>
-                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
+                    <a href="contact.html" class="nav_item">
                         <li>contact</li>
                     </a>
                 </ul>
@@ -58,7 +64,7 @@
                     <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
                         <li>blog</li>
                     </a>
-                    <a href="https://www.linkedin.com/in/AnilaHsu" class="nav_item text-[#885e2be6]">
+                    <a href="contact.html" class="nav_item">
                         <li>contact</li>
                     </a>
                 </ul>
@@ -69,7 +75,10 @@
      <main>
         <section class="section_layout flex flex-col items-center ">
             <div class="flex justify-center">
-                <h1 class="title">Kyoto</h1>
+                <h1 class="title">
+                    Kyoto
+                    <i class="fa-solid fa-paw paw_icon"></i>
+                </h1>
             </div>
             <div>
                 <p class="text-center">camera: Canon EOS 70D</p>
@@ -212,12 +221,15 @@
 
         <section class="contact px-[5%] py-36 flex justify-center">
             <div class="bg-[#6954161e]	 w-[80%] rounded-3xl flex justify-center flex-col">
-                <div class="relative -top-10">
+                <div class="relative -top-6">
                     <div>
-                        <h1 class="mb-2">contact</h1>
+                        <h1 class="mb-2">
+                            contact
+                            <i class="fa-solid fa-paw paw_icon"></i>
+                        </h1>
                     </div>
                     <div class="flex flex-col items-center justify-center h-[250px] sm:h-[200px]">
-                        <div class="py-5">
+                        <div class="py-5 flex justify-center">
                             <a href="mailto:simple01281017@gmail.com">
                                 <i class="ti ti-mail icon"></i>
                             </a>
@@ -236,7 +248,8 @@
                             </a>
                         </div>
                         <div class="px-[20%] text-center">
-                            <p class="contact_content">Welcome to work, photography invitation or communication !</p>
+                            <p class="contact_content">Welcome to work, photography invitation.
+                                <br> Please follow me, communicate with me!</p>
                         </div>
                     </div>
                 </div>
@@ -246,7 +259,7 @@
 
      <footer class="flex justify-center">
         <div class=" h-[100px] w-[90%] pt-10 pb-24 footer flex justify-center md:justify-between">
-            <div class="px-3">
+            <div class="px-3 font-semibold">
                 <p>Copyright © anilahsu, All rights reserved.</p>
             </div>
             <div class="hidden md:block">
@@ -263,7 +276,7 @@
                     <a href="https://anila.me/">
                         <li class="footer_li">blog</li>
                     </a>
-                    <a href="https://www.linkedin.com/in/AnilaHsu">
+                    <a href="contact.html">
                         <li class="footer_li">contact</li>
                     </a>
                 </ul>

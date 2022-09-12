@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d0012cad74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yomogi&display=swap" rel="stylesheet">
+    <!-- english font fimaly -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- japanese font fimaly -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="style.js"></script>
+</head>
+
+<body class="min-w-[420px]">
+    <header class="fixed w-full h-[80px] bg-white z-[100]">
+        <div class="flex justify-between items-center h-[80px]">
+            <a href="index.html">
+                <h6 class="logo mx-6 md:mx-12 text-2xl md:text-4xl font-semibold text-gray-800">
+                    anilahsu.
+                </h6>
+            </a>
+            <nav class="hidden mx-6 md:block md:mx-12">
+                <ul class="flex items-center">
+                    <a href="about.html" class="nav_item">
+                        <li>about</li>
+                    </a>
+                    <a href="work.html" class="nav_item">
+                        <li>work</li>
+                    </a>
+                    <a href="album.html" class="nav_item">
+                        <li>album</li>
+                    </a>
+                    <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
+                        <li>blog</li>
+                    </a>
+                    <a href="contact.html" class="nav_item">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <button class="md:hidden text-[40px] px-10" id="nav_button">=</button>
+            <nav class="absolute top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden" id="sm_nav_list">
+                <ul class="pt-10 pb-20">
+                    <a href="about.html" class="nav_item">
+                        <li>about</li>
+                    </a>
+                    <a href="work.html" class="nav_item">
+                        <li>work</li>
+                    </a>
+                    <a href="album.html" class="nav_item">
+                        <li>album</li>
+                    </a>
+                    <a href="https://anila.me/" class="nav_item text-[#885e2be6]">
+                        <li>blog</li>
+                    </a>
+                    <a href="contact.html" class="nav_item">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact px-[5%] py-36 flex justify-center">
+            <div class="flex justify-center flex-col w-[70%]"> 
+                <div class="flex justify-center px-2">
+                    <h1 class="title flex items-center">
+                        contact 
+                        <i class="fa-solid fa-paw paw_icon"></i>
+                    </h1>
+                </div>
+                <div class="w-[100%] text-center pb-10">
+                    <p>
+                        It's great to meet you :))
+                        <br>
+                        Welcome to work, photography invitation.
+                        <br>
+                        Please follow me,
+                        <br class="sm:hidden"> or communicate with me!
+                        
+                    </p>
+                </div>
+                <div class="bg-[#6954161e] rounded-3xl flex flex-col items-center justify-center">
+                    <div class="py-5 px-8 text-center">
+                        <div class="my-1 lg:flex justify-center">
+                            <span class="text-[#885e2be6] py-[5px] px-[3px]">contact me:</span>
+                            <div class="flex flex-col md:flex-row flex-wrap justify-center">
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="mailto:simple01281017@gmail.com">
+                                    <i class="ti ti-mail"></i>
+                                    gmail
+                                </a>
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="https://www.linkedin.com/in/AnilaHsu">                                   
+                                    <i class="ti ti-brand-linkedin"></i>
+                                    linkedin
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-1 lg:flex justify-center">
+                            <span class="text-[#885e2be6] text-[18px] py-[5px] px-[3px]">github & blog:</span>
+                            <div class="flex flex-col md:flex-row flex-wrap justify-center">
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="https://github.com/AnilaHsu">
+                                    <i class="ti ti-brand-github"></i>
+                                    github
+                                </a>
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb]  hover:text-[18px]" href="https://anila.me/">
+                                    <i class="ti ti-brand-blogger"></i>
+                                    blog
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-1 lg:flex">
+                            <span class="text-[#885e2be6] text-[18px] py-[5px] px-[3px]">social links:</span>
+                            <div class="flex flex-col md:flex-row flex-wrap justify-center">
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="https://twitter.com/AnilaHsu">
+                                    <i class="ti ti-brand-twitter"></i>
+                                    twitter
+                                </a>
+                                <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="https://www.instagram.com/anila_hsu/">
+                                    <i class="ti ti-brand-instagram"></i>
+                                    instagram
+                                </a>
+                            
+                            </div>    <a class="text-[20px] text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[18px]" href="https://www.facebook.com/AnilaxHsu/">
+                                    <i class="ti ti-brand-facebook"></i>
+                                    facebook
+                                </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex justify-center">
+        <div class=" h-[100px] w-[90%] pt-10 pb-24 footer flex justify-center md:justify-between">
+            <div class="px-3 font-semibold">
+                <p>Copyright © anilahsu, All rights reserved.</p>
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex">
+                    <a href="about.html">
+                        <li class="footer_li">about</li>
+                    </a>
+                    <a href="work.html">
+                        <li class="footer_li">work</li>
+                    </a>
+                    <a href="album.html">
+                        <li class="footer_li">album</li>
+                    </a>
+                    <a href="https://anila.me/">
+                        <li class="footer_li">blog</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="footer_li">contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -55,7 +55,7 @@ a {
   }
 
   .line {
-    @apply pb-0.5 text-gray-700 border-b-2 border-gray-400 hover:text-gray-500 hover:border-gray-300;
+    @apply pb-0.5 text-gray-700 border-b-2 border-gray-400 hover:text-gray-500 hover:border-gray-300 hover:text-[0.95rem];
   }
 
   .photograph_li {
@@ -91,7 +91,7 @@ a {
   }
 
   .contact_content {
-    @apply text-[16px];
+    @apply text-[14px] md:text-[16px];
   }
 
   .paw_icon {
@@ -99,7 +99,7 @@ a {
   }
 
   .icon {
-    @apply text-2xl md:text-3xl text-gray-700 px-3 hover:text-[#7b7771fb] hover:text-[34px];
+    @apply text-2xl md:text-3xl text-gray-700 px-3 hover:text-[#7b7771fb] hover:text-[1.3rem] md:hover:text-[1.7rem];
   }
 
   .li_left {
@@ -167,5 +167,5 @@ a {
 .image:hover {
   opacity: 0.65;
   transform: scale(1.15);
-  transition-duration: .8s;
+  transition-duration: .75s;
 }

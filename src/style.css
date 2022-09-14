@@ -79,7 +79,7 @@ a {
   }
 
   .blog_img {
-    @apply aspect-[3/2.6] py-5;
+    @apply aspect-[3/2.2] object-fill;
   }
 
   .footer {
@@ -158,4 +158,14 @@ a {
 .reference-link {
   color: #885e2be6;
   padding: 0px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image:hover {
+  opacity: 0.65;
+  transform: scale(1.15);
+  transition-duration: .8s;
 }

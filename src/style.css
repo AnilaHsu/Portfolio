@@ -99,7 +99,7 @@ a {
   }
 
   .icon {
-    @apply text-xl md:text-2xl text-gray-700 px-2 hover:text-[#7b7771fb] hover:text-[26px];
+    @apply text-2xl md:text-3xl text-gray-700 px-3 hover:text-[#7b7771fb] hover:text-[34px];
   }
 
   .li_left {

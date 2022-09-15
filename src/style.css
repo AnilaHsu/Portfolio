@@ -51,7 +51,7 @@ a {
   }
 
   .index_about_title {
-    @apply mx-0.5 text-[26px] lg:text-[32px] leading-[40px] md:leading-[45px] md:tracking-widest text-gray-600;
+    @apply mx-0.5 text-[28px] lg:text-[32px] leading-[42px] md:leading-[45px] md:tracking-widest text-gray-600;
   }
 
   .line {
@@ -79,7 +79,7 @@ a {
   }
 
   .blog_img {
-    @apply aspect-[3/2.1] object-fill;
+    @apply object-fill;
   }
 
   .footer {

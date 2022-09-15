@@ -26,7 +26,7 @@
     <header class="fixed w-full h-[80px] bg-white z-[100]">
         <div class="flex justify-between items-center h-[80px]">
             <a href="index.html">
-                <h6 class="logo mx-6 md:mx-12 text-2xl md:text-4xl font-semibold text-gray-800">
+                <h6 class="logo">
                     anilahsu.
                 </h6>
             </a>
@@ -50,7 +50,7 @@
                 </ul>
             </nav>
             <button class="md:hidden text-[40px] px-10" id="nav_button">=</button>
-            <nav class="absolute top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden" id="sm_nav_list">
+            <nav class="mobile_nav_container" id="sm_nav_list">
                 <ul class="pt-10 pb-20">
                     <a href="about.html" class="nav_item">
                         <li>about</li>
@@ -78,17 +78,17 @@
                 <img src="../photograph/mainVisual.jpg">
             </div>
             <div class="my-2 mx-6 text-center">
-                <p class="text-[12px] leading-3 md:text-[14px] md:leading-4">
+                <p class="main_visual_text">
                     I hope that I can share more knowledge and technology through writing,
                     and record the beautiful corners of the world through photography.</p>
             </div>
         </section>
 
-        <section class="about px-[5%] pt-6 lg:pt-24 md:px-[3%] lg:flex lg:flex-wrap lg:justify-center">
-            <div class="px-[5%] md:px-[20%] lg:px-[3%] mt-10 w-auto flex justify-center md:justify-end">
+        <section class="index_about_section">
+            <div class="index_about_image_container">
                 <img src="../photograph/anila.jpg" class="index_about_img">
             </div>
-            <div class="px-[5%] md:px-[20%] lg:px-[3%] mt-10 flex flex-col items-center md:mt-0 md:items-start lg:block">
+            <div class="index_about">
                 <div class="px-6">
                     <b class="index_about_title">わ</b>
                     <b class="index_about_title">た</b>
@@ -102,13 +102,13 @@
                 </div>
                 <div>
                     <hr class="border-b-2 border-dashed my-6 mx-4">
-                    <div class="index_about-content flex flex-col items-center">
-                        <p class="font-medium pb-10 px-6 text-[14px]">
+                    <div class="index_about_content">
+                        <p class="font-medium pb-10 text-[14px]">
                             私は、ウェブサイトを開発し、
                             <br class="hidden xs:block">
                             デザインするのが好きです。
                             <br class="hidden xs:block">
-                            挑戦を通して学び、成長することを楽しみ、
+                            挑戦を通して学び、成長することを楽しみ。
                             <br class="hidden xs:block">
                             問題の本質を探り、観察するのが好きです。
                             <br class="hidden xs:block">
@@ -189,7 +189,7 @@
                     <i class="fa-solid fa-paw paw_icon"></i>
                 </h1>
             </div>
-            <ul class=" grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4">
+            <ul class="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4">
                 <li class="blog_li">
                     <a href="https://anila.me/posts/react-redux/">
                         <figure class="image-container">
@@ -284,7 +284,7 @@
     </main>
 
     <footer class="flex justify-center">
-        <div class=" h-[100px]  w-[90%] pt-10 pb-24 footer flex justify-center lg:justify-between">
+        <div class="footer_container">
             <div class="px-3 font-semibold">
                 <p class="py-3">Copyright © anilahsu, All rights reserved.</p>
             </div>

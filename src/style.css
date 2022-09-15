@@ -34,24 +34,51 @@ a {
 }
 
 @layer components {
-  .section_layout {
-    @apply pt-40 px-[5%] lg:px-[8%];
+  .logo {
+    @apply mx-6 md:mx-12 text-2xl md:text-4xl font-semibold text-gray-800;
+  }
+
+  .mobile_nav_container {
+    @apply absolute top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden;
   }
 
   .nav_item {
     @apply mx-2.5 text-gray-700 text-2xl;
   }
 
+ .section_layout {
+    @apply pt-40 px-[5%] lg:px-[8%];
+  }
+
   .title {
     @apply text-[36px] lg:text-[46px] bg-[#f4f0cb50] border-solid border-b-[8px] border-r-[5px] rounded-full border-[#4e3a0d1f] leading-5 pl-2 pr-1;
+  }
+
+  .main_visual_text{
+    @apply text-[12px] leading-3 md:text-[14px] md:leading-4;
+  }
+
+  .index_about_section {
+    @apply px-[5%] pt-6 lg:pt-24 md:px-[3%] lg:flex lg:flex-wrap lg:justify-center;
+  }
+
+  .index_about_image_container {
+    @apply px-[5%] md:px-[20%] lg:px-[3%] mt-10 w-auto flex justify-center md:justify-end;
   }
 
   .index_about_img {
     @apply lg:px-0 w-[240px] md:w-[280px];
   }
 
+  .index_about {
+    @apply px-[5%] md:px-[20%] lg:px-[3%] mt-10 flex flex-col items-center md:mt-0 md:items-start lg:block;
+  }
   .index_about_title {
     @apply mx-0.5 text-[28px] lg:text-[32px] leading-[42px] md:leading-[45px] md:tracking-widest text-gray-600;
+  }
+
+  .index_about_content {
+    @apply flex flex-col items-center px-6;
   }
 
   .line {
@@ -82,14 +109,6 @@ a {
     @apply object-fill;
   }
 
-  .footer {
-    @apply border-t-2;
-  }
-
-  .footer_li {
-    @apply text-gray-600 px-3 text-xl hover:text-[#7b7771fb];
-  }
-
   .contact_content {
     @apply text-[14px] md:text-[16px];
   }
@@ -102,6 +121,10 @@ a {
     @apply text-2xl md:text-3xl text-gray-700 px-3 hover:text-[#7b7771fb] hover:text-[1.3rem] md:hover:text-[1.7rem];
   }
 
+  .avatar {
+    @apply  w-[280px] md:mr-6 md:ml-6 md:mt-6 lg:ml-20 lg:mr-10 xl:ml-48;
+  }
+
   .li_left {
     @apply w-[20%] lg:w-[30%] text-right pt-5 pr-3 lg:pr-10;
   }
@@ -109,6 +132,15 @@ a {
   .li_right {
     @apply w-[80%] lg:w-[70%] pt-5 pl-5 pr-5 lg:pl-10 border-l-2 border-dotted;
   }
+  
+  .footer_container {
+    @apply h-[100px] w-[90%] pt-10 pb-24 flex justify-center lg:justify-between border-t-2;
+  }
+
+  .footer_li {
+    @apply text-gray-600 px-3 text-xl hover:text-[#7b7771fb];
+  }
+
 }
 
 .nav_item::after {
@@ -142,16 +174,12 @@ a {
   }
 }
 
-.logo {
-  letter-spacing: -0.2;
-}
-
 .nav_block {
   display: block;
 }
 
 .index_about_title,
-.index_about-content {
+.index_about_content {
   font-family: 'Kosugi Maru', sans-serif;
 }
 

@@ -51,7 +51,7 @@ a {
   }
 
   .title {
-    @apply text-[36px] lg:text-[46px] bg-[#f4f0cb50] border-solid border-b-[8px] border-r-[5px] rounded-full border-[#4e3a0d1f] leading-5 pl-2 pr-1;
+    @apply text-[36px] lg:text-[46px] bg-[#e1d6b447] border-solid border-b-[8px] border-r-[5px] rounded-full border-[#4e3a0d1f] leading-5 pl-2 pr-1;
   }
 
   .main_visual_text{

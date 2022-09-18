@@ -43,7 +43,7 @@ a {
   }
 
   .mobile_nav_container {
-    @apply absolute top-[60px] xs:top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden;
+    @apply absolute top-[60px] md:top-[80px] bg-[#e9e6ddea] w-[100%] text-center hidden;
   }
 
   .nav_item {

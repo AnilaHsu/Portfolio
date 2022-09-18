@@ -24,12 +24,16 @@ a {
     @apply text-2xl text-gray-600;
   }
 
+  h5 {
+    @apply text-lg text-gray-600;
+  }
+
   h6 {
     @apply text-gray-600;
   }
 
   p {
-    @apply text-[13px] md:text-[15px] text-gray-600 tracking-widest leading-6;
+    @apply text-[15px] text-gray-600 tracking-widest leading-6;
   }
 }
 
@@ -86,7 +90,7 @@ a {
   }
 
   .photograph_li {
-    @apply w-[50%] lg:w-[25%];
+    @apply w-[100%] sm:w-[50%] lg:w-[25%];
   }
 
   .photograph_img {
@@ -98,11 +102,11 @@ a {
   }
 
   .album_li {
-    @apply p-3;
+    @apply px-3;
   }
 
   .blog_li {
-    @apply px-3 py-1 lg:py-3;
+    @apply px-3;
   }
 
   .blog_img {
@@ -188,8 +192,9 @@ a {
   padding: 0px;
 }
 
-.image-container {
+.image_container {
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .image:hover {

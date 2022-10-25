@@ -17,7 +17,7 @@ a {
 
 @layer base {
   h1 {
-    @apply text-[42px] text-center text-gray-600 mb-12;
+    @apply text-[38px] text-center text-gray-600 mb-12;
   }
 
   h2 {
@@ -55,7 +55,7 @@ a {
   }
 
   .title {
-    @apply text-[36px] lg:text-[46px] bg-[#e1d6b447] border-solid border-b-[8px] border-r-[5px] rounded-full border-[#4e3a0d1f] leading-5 pl-2 pr-1;
+    @apply text-[36px] lg:text-[38px] bg-[#e1d6b447] border-solid border-b-[8px] border-r-[5px] rounded-full border-[#4e3a0d1f] leading-5 pl-2 pr-1;
   }
 
   .main_visual_text{
@@ -126,7 +126,7 @@ a {
   }
 
   .avatar {
-    @apply  w-[280px] md:mr-6 md:ml-6 md:mt-6 lg:ml-20 lg:mr-10 xl:ml-44;
+    @apply  w-[280px] md:mr-6 md:ml-6 md:mt-6 lg:ml-20 lg:mr-10 xl:ml-40;
   }
 
   .li_left {
@@ -190,6 +190,7 @@ a {
 .reference-link {
   color: #885e2be6;
   padding: 0px;
+  text-decoration: revert;
 }
 
 .image_container {
@@ -201,4 +202,7 @@ a {
   opacity: 0.65;
   transform: scale(1.15);
   transition-duration: .75s;
+}
+.hightline {
+  color: #9d5d05b8;
 }

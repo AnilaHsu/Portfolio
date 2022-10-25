@@ -24,9 +24,12 @@
     <script src="style.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-    
+
         gtag('config', 'G-KTRW9FBM22');
     </script>
 </head>
@@ -41,11 +44,11 @@
             </a>
             <nav class="hidden mx-6 md:block md:mx-12">
                 <ul class="flex items-center">
+                    <a href="index.html" class="nav_item">
+                        <li>home</li>
+                    </a>
                     <a href="about.html" class="nav_item">
                         <li>about</li>
-                    </a>
-                    <a href="work.html" class="nav_item">
-                        <li>work</li>
                     </a>
                     <a href="album.html" class="nav_item">
                         <li>album</li>
@@ -61,11 +64,11 @@
             <button class="md:hidden text-[40px] px-10" id="nav_button">=</button>
             <nav class="mobile_nav_container" id="sm_nav_list">
                 <ul class="pt-10 pb-20">
+                    <a href="index.html" class="nav_item">
+                        <li>home</li>
+                    </a>
                     <a href="about.html" class="nav_item">
                         <li>about</li>
-                    </a>
-                    <a href="work.html" class="nav_item">
-                        <li>work</li>
                     </a>
                     <a href="album.html" class="nav_item">
                         <li>album</li>
@@ -94,38 +97,70 @@
                 </div>
 
                 <div class="flex items-center flex-col md:flex-row">
-                    <img class="avatar" src="../photograph/anila.jpg" alt="" >
+                    <img class="avatar" src="../photograph/anila.jpg" alt="">
                     <div class="flex flex-col items-center mt-5 mx-8 md:mx-6 md:block">
                         <div class="flex flex-col items-center text-center md:items-start md:text-left">
                             <div>
                                 <p> Anila Hsu | Christian </p>
                                 <br>
                                 <p>
-                                    Frontend Developer, Analyst,
+                                    Frontend Developer, Analyst
                                     <br>Writer, Photographer
                                 </p>
                                 <div class="my-2 w-[300px]">
                                     <hr class="border-b-2 border-dashed">
                                 </div>
-                                <p>
-                                    React . TypeScript . Vue . JavaScript
-                                    <br>
-                                    HTML . SCSS . Tailwind . Bootstrap
-                                    <br>
-                                    Python . SQL . Git
-                                </p>
-                                <br>
                             </div>
-                           <div>
+                            <div>
                                 <p>
-                                    I am passionate about frontend development and website design, and I'm into learning and growing via challenges.
+                                    I am passionate about frontend development and website design, and I'm into learning
+                                    and growing via challenges.
                                     <br>
-                                    I used to work as a data analyst, I'm also fond of exploring and observing the nature of things and keen on sharing and pursuing knowledge. 
-                                    I uphold curiosity and enthusiasm, as well as the logical thinking and teamwork skills that I have cultivated in FinTech in the past, keep learning and keep moving on! :))
+                                    I used to work as a data analyst, I'm also fond of exploring and observing the
+                                    nature of things and keen on sharing and pursuing knowledge.
+                                    I uphold curiosity and enthusiasm, as well as the logical thinking and teamwork
+                                    skills that I have cultivated in FinTech in the past, keep learning and keep moving
+                                    on! :))
                                 </p>
-                           </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_layout">
+            <div class="lg:px-20">
+                <div class="flex justify-center">
+                    <h1 class="title">
+                        skills
+                        <i class="fa-solid fa-paw paw_icon"></i>
+                    </h1>
+                </div>
+                <div>
+                    <ul>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h5>Web Development</h5>
+                            </div>
+                            <div class="li_right">
+                                <p>
+                                    React.js . Redux . TypeScript . JavaScript . Vue.js . Git . HTML .
+                                    <br> SCSS .  Material UI . Tailwind . Bootstrap . WordPress
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h5>Data Analysis</h5>
+                            </div>
+                            <div class="li_right">
+                                <p>Python . SQL . Tableau . Power BI . GA . GTM . SSIS . SSAS</p>
+                            </div>
+
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </section>
@@ -145,23 +180,25 @@
                                 <h6>2022</h6>
                             </div>
                             <div class="li_right">
-                                <h6>Data Analyst</h6>
+                                <h5>Data Analyst</h5>
                                 <p>
-                                    1. Establish a flight database for the Health and Injury Insurance Department to
-                                    provide real-time and historical flight inquiries for domestic and foreign flights
-                                    to and from Taiwan.
+                                    • Using <span class="hightline">Python</span> and <span
+                                        class="hightline">Oracle</span> to establish a flight database for the Health
+                                    and Injury Insurance Department to provide real-time and historical flight inquiries
+                                    for domestic and foreign flights to and from Taiwan.
                                     <br>
-                                    2. Develop an automatic report processing program for the auto insurance department,
-                                    saving one week of data processing time per month.
+                                    • Using <span class="hightline">Python</span> to develop an automatic report
+                                    processing program for the auto insurance department, saving one week of data
+                                    processing time per month.
                                     <br>
-                                    3. Use GTM and GA to understand user behavior of online insurance sites.
+                                    • Using <span class="hightline">GTM</span> and <span class="hightline">GA</span> to
+                                    understand user behavior of online insurance sites.
                                     <br>
-                                    4. Use Power BI to produce an aging analysis report for the management department.
+                                    • Using <span class="hightline">Power BI</span> to produce an aging analysis report
+                                    for the management department & performance and membership statistics reports for
+                                    the e-commerce department.
                                     <br>
-                                    5. Use Power BI to produce performance and membership statistics reports for the
-                                    e-commerce department.
-                                    <br>
-                                    6. Work as an office Python lecturer and offer weekly programming courses.
+                                    • Work as an office <span class="hightline">Python lecturer</span> and offer weekly programming courses.
                                 </p>
                                 <br>
                             </div>
@@ -171,12 +208,12 @@
                                 <h6>2021</h6>
                             </div>
                             <div class="li_right">
-                                <h6>Web Developer Intern</h6>
+                                <h5>Web Developer Intern</h5>
                                 <p>
-                                    1. Use Vue.js to dynamically display the data predicted by the AI model on the web
-                                    page through the API.
+                                    • Using <span class="hightline">Vue.js</span> to build the dashboard website for
+                                    displaying the information graphically from IoT and AI models.
                                     <br>
-                                    2. Manage the development of ten members team collaborative project.
+                                    • Manage the development of ten members team collaborative project.
                                 </p>
                                 <br>
                             </div>
@@ -186,13 +223,14 @@
                                 <h6>2020</h6>
                             </div>
                             <div class="li_right">
-                                <h6>
+                                <h5>
                                     Assistant Professor
-                                </h6>
+                                </h5>
                                 <p>
-                                    1. Use Bootstrap4 to independently build a professor's personal website.
+                                    • Using <span class="hightline">Bootstrap4</span> to independently build a
+                                    professor's personal website.
                                     <br>
-                                    2. Assist professors in preparing courses and presentations.
+                                    • Assist professors in preparing courses and presentations.
                                 </p>
                                 <br>
                             </div>
@@ -206,7 +244,7 @@
             <div class="lg:px-20">
                 <div class="flex justify-center">
                     <h1 class="title">
-                        volunteering
+                        Volunteering
                         <i class="fa-solid fa-paw paw_icon"></i>
                     </h1>
                 </div>
@@ -218,30 +256,10 @@
                             </div>
                             <div class="li_right font-semibold">
                                 <p>
+                                    Frontend Engineer |
                                     <a class="reference-link" href="https://www.worklifeinjapan.net/home/about-us">
-                                        Frontend Engineer - Worklife In Japan [WIJ]
+                                        WORKLIFE IN JAPAN [WIJ]
                                     </a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex justify-center">
-                            <div class="li_left">
-                            </div>
-                            <div class="li_right font-semibold">
-                                <p>
-                                    <a class="reference-link" href="https://blog.coscup.org/">
-                                        Conference for Open Source Coders, Users and Promoters [COSCUP]
-                                        <a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex justify-center">
-                            <div class="li_left">
-                                <h6>2021</h6>
-                            </div>
-                            <div class="li_right font-semibold">
-                                <p>
-                                    Court Justice - NTUT Students' Association
                                 </p>
                             </div>
                         </li>
@@ -250,16 +268,9 @@
                                 <h6>2020</h6>
                             </div>
                             <div class="li_right font-semibold">
-                                <p>Chief Financial Officer - NTUT Programming Club </p>
-                            </div>
-                        </li>
-                        <li class="flex justify-center">
-                            <div class="li_left">
-                            </div>
-                            <div class="li_right font-semibold">
-                                <p>
-                                    <a class="reference-link" href="https://sitcon.org/2020/">
-                                        Photographer - Students' Information Technology Conference [SITCON]
+                                <p>Financial Officer |
+                                    <a class="reference-link" href="https://ntut.club/">
+                                        NTUT Programming Club [NPC]
                                         <a>
                                 </p>
                             </div>
@@ -269,7 +280,46 @@
                             </div>
                             <div class="li_right font-semibold">
                                 <p>
-                                    Student Representative/Student Councilor - NTUT Students' Association
+                                    Photographer |
+                                    <a class="reference-link" href="https://sitcon.org/2020/">
+                                        Students' Information Technology Conference [SITCON]
+                                        <a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_layout">
+            <div class="lg:px-20">
+                <div class="flex justify-center">
+                    <h1 class="title">
+                        club
+                        <i class="fa-solid fa-paw paw_icon"></i>
+                    </h1>
+                </div>
+                <div>
+                    <ul>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2021</h6>
+                            </div>
+                            <div class="li_right font-semibold">
+                                <p>
+                                    Court Justice | <span class="hightline">NTUT Student Association</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex justify-center">
+                            <div class="li_left">
+                                <h6>2020</h6>
+                            </div>
+                            <div class="li_right font-semibold">
+                                <p>
+                                    Student Representative/Student Councilor | <span class="hightline">NTUT Student
+                                        Association</span>
                                 </p>
                             </div>
                         </li>
@@ -279,27 +329,19 @@
                             </div>
                             <div class="li_right font-semibold">
                                 <p>
-                                    <a class="reference-link" href="https://coscup.org/2019/en/">
-                                        Conference for Open Source Coders, Users and Promoters [COSCUP]
-                                    </a>
+                                    Vice Officer of Humanities Department | <span class="hightline">NTUT Student
+                                        Association</span>
                                 </p>
                             </div>
                         </li>
                         <li class="flex justify-center">
                             <div class="li_left">
+                                <h6>2018</h6>
                             </div>
                             <div class="li_right font-semibold">
                                 <p>
-                                    Vice Officer of Humanities Department - NTUT Students' Association
-                                </p>
-                            </div>
-                        </li>
-                        <li class="flex justify-center">
-                            <div class="li_left">
-                            </div>
-                            <div class="li_right font-semibold">
-                                <p>
-                                    Coordinator/Vice Coordinator - NTUT Students' Association
+                                    Coordinator/Vice Coordinator | <span class="hightline">NTUT Student
+                                        Association</span>
                                 </p>
                             </div>
                         </li>
@@ -309,8 +351,9 @@
                             </div>
                             <div class="li_right font-semibold">
                                 <p>
-                                    Saxophone Leader - Concert Band, Taipei Municipal Shilin High School of Commerce
-                                    [SLHS]
+                                    Saxophone Leader | <span class="hightline">Concert Band, Taipei Municipal Shilin
+                                        High School of Commerce
+                                        [SLHS]</span>
                                 </p>
                                 <br>
                             </div>
@@ -324,18 +367,17 @@
             <div class="lg:px-20">
                 <div class="flex justify-center">
                     <h1 class="title">
-                        certifications
+                        certificates
                         <i class="fa-solid fa-paw paw_icon"></i>
                     </h1>
                 </div>
-
                 <ul>
                     <li class="flex justify-center">
                         <div class="li_left">
-                            <h6>2022 </h6>
+                            <h6>2022</h6>
                         </div>
                         <div class="li_right font-semibold">
-                            <p> JLPT N2 & JLPT N3 </p>
+                            <p> • JLPT N2 & JLPT N3 </p>
                         </div>
                     </li>
                     <li class="flex justify-center">
@@ -346,9 +388,9 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Graduated with the first place,
-                                Department of Information & Financial Management, National Taipei University of
-                                Technology [NTUT]
+                                • Graduated with the first place<br>
+                                from National Taipei University of Technology<br>
+                                with a degree in Information and Financial Management
                             </p>
                         </div>
                     </li>
@@ -359,7 +401,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Property Insurance Representative
+                                • Property Insurance Representative
                             </p>
                         </div>
                     </li>
@@ -368,7 +410,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Microsoft Certified, Azure 900
+                                • Microsoft Azure Fundamentals
                             </p>
                         </div>
                     </li>
@@ -378,7 +420,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Planner of Business Intelligence
+                                • Planner of Business Intelligence
                             </p>
                         </div>
                     </li>
@@ -388,7 +430,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Financial Markets and Professional Ethics
+                                • Financial Markets and Professional Ethics
                             </p>
                         </div>
                     </li>
@@ -398,7 +440,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Personal Insurance Representative
+                                • Personal Insurance Representative
                             </p>
                         </div>
                     </li>
@@ -408,7 +450,7 @@
                         </div>
                         <div class="li_right font-semibold">
                             <p>
-                                Second place in the 13th Taipei High School Theme Website Competition
+                                • Second place, The 13th Taipei High School Theme Website Competition
                             </p>
                             <br>
                         </div>
@@ -513,11 +555,11 @@
             </div>
             <div class="hidden lg:block">
                 <ul class="flex">
+                    <a href="index.html">
+                        <li class="footer_li">home</li>
+                    </a>
                     <a href="about.html">
                         <li class="footer_li">about</li>
-                    </a>
-                    <a href="work.html">
-                        <li class="footer_li">work</li>
                     </a>
                     <a href="album.html">
                         <li class="footer_li">album</li>

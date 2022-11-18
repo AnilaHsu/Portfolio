@@ -152,7 +152,7 @@ a {
   }
 
  .social_icon_title {
-  @apply text-[#885e2be6] py-[5px] px-[3px]
+    @apply text-[#885e2be6] py-[5px] px-[3px]
  }
 
   .social_icon {

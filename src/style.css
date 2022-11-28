@@ -156,7 +156,7 @@ a {
  }
 
   .social_icon {
-    @apply text-[18px] text-gray-700 px-2 hover:text-[#7b7771fb] h-[40px] 
+    @apply text-[18px] text-gray-700 px-0.5 sm:px-2 hover:text-[#7b7771fb] h-[40px] 
   }
 
 }

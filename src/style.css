@@ -130,10 +130,13 @@ a {
     @apply text-[26px] text-gray-700 px-0.5 sm:px-2 hover:text-[#7b7771fb] hover:text-[28px]
   }
 
+  .icon_container {
+    @apply pt-[5%] sm:pt-[3%] pb-[2%] flex justify-center h-[70px]
+  }
+
   .avatar {
     @apply  w-[280px]  md:mr-6 md:ml-2 md:mt-6 lg:ml-16 lg:mr-6 xl:ml-32;
   }
-
   
  .li_left {
     @apply w-[24%] md:w-[20%] lg:w-[30%] text-right pt-5 pr-5 lg:pr-8;
@@ -158,7 +161,6 @@ a {
   .social_icon {
     @apply text-[18px] text-gray-700 px-0.5 sm:px-2 hover:text-[#7b7771fb] h-[40px] 
   }
-
 }
 
 .nav_item::after {
@@ -217,6 +219,7 @@ a {
   transform: scale(1.15);
   transition-duration: .75s;
 }
+
 .hightline {
   color: #9d5d05b8;
 }

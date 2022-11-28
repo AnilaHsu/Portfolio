@@ -136,11 +136,11 @@ a {
 
   
  .li_left {
-    @apply w-[24%] md:w-[20%] lg:w-[30%] text-right pt-5 pr-10 lg:pr-10;
+    @apply w-[24%] md:w-[20%] lg:w-[30%] text-right pt-5 pr-5 lg:pr-8;
   }
   
   .li_right {
-    @apply w-[66%] md:w-[80%] lg:w-[70%] pt-5 pl-5 pr-5 lg:pl-10 border-l-2 border-dotted;
+    @apply w-[66%] md:w-[80%] lg:w-[70%] pt-5 pl-5 pr-5 lg:pl-8 border-l-2 border-dotted;
   }
  
   .footer_container {

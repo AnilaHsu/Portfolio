@@ -224,6 +224,17 @@ a {
   transition-duration: .75s;
 }
 
+.project_img {
+  aspect-ratio: 1.2/1;
+  border-width: 1px;
+}
+
+.project_img:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+  transition-duration: .65s;
+}
+
 .hightline {
   color: #9d5d05b8;
 }

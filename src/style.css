@@ -10,6 +10,10 @@ body {
   font-family: 'Jua', 'Kosugi Maru', Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "MS Ｐゴシック", "MS PGothic", sans-serif;
 }
 
+p {
+  font-family: 'Alegreya Sans', 'Kosugi Maru', Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "MS Ｐゴシック", "MS PGothic", sans-serif;;
+}
+
 a {
   padding: 5px 3px;
 }
@@ -24,6 +28,10 @@ a {
     @apply text-xl sm:text-2xl text-gray-600;
   }
 
+  h3 {
+    @apply text-xl text-gray-600;
+  }
+
   h5 {
     @apply text-lg text-gray-600;
   }
@@ -33,7 +41,7 @@ a {
   }
 
   p {
-    @apply text-[15px] text-gray-600 tracking-widest leading-6;
+    @apply text-[16px] text-gray-600 tracking-widest leading-6;
   }
 }
 

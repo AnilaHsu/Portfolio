@@ -67,7 +67,7 @@ a {
   }
 
   .main_visual_text{
-    @apply text-[12px] leading-3 md:text-[14px] md:leading-4 font-semibold text-gray-600;
+    @apply text-[13px] leading-3 tracking-wide md:text-[14px] md:leading-4 font-semibold text-gray-600;
   }
 
   .index_about_section {

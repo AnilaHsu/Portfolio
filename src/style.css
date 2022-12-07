@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h5, h6, body {
+h1, h2, h5, h6, body {
   font-family: 'Jua', 'Kosugi Maru', Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "MS Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -28,16 +28,12 @@ a {
     @apply text-xl sm:text-2xl text-gray-600;
   }
 
-  h3 {
-    @apply text-xl text-gray-600;
-  }
-
   h5 {
     @apply text-lg text-gray-600;
   }
 
   h6 {
-    @apply text-gray-600 text-[18px] sm:text-[16px];
+    @apply text-gray-600 text-[17px];
   }
 
   p {

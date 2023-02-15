@@ -63,7 +63,7 @@ a {
   }
 
   .main_visual_text{
-    @apply text-[13px] leading-3 tracking-wide md:text-[14px] md:leading-4 text-gray-600;
+    @apply text-[13px] leading-4 tracking-wide md:text-[14px] text-gray-600;
   }
 
   .index_about_section {
@@ -123,7 +123,7 @@ a {
   }
 
   .contact_content {
-    @apply text-[14px] md:text-[16px];
+    @apply text-[12px] sm:text-[14px] md:text-[16px];
   }
 
   .paw_icon {
@@ -131,7 +131,7 @@ a {
   }
 
   .icon {
-    @apply text-[26px] text-gray-700 px-0.5 sm:px-2 hover:text-[#7b7771fb] hover:text-[28px]
+    @apply text-[24px] md:text-[26px] text-gray-700 px-0.5 sm:px-2 hover:text-[#7b7771fb] hover:text-[28px]
   }
 
   .icon_container {
@@ -171,7 +171,7 @@ a {
   }
   
   .copyright {
-    @apply py-2 text-center text-gray-600
+    @apply text-[13px] py-2 text-center text-gray-600 sm:text-[15px] md:text-[17px]
   }
 }
 

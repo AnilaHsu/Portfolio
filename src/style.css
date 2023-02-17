@@ -163,7 +163,7 @@ a {
  }
 
   .social_icon {
-    @apply flex flex-col items-center text-[16px] text-gray-700 px-0.5 sm:px-2 md:flex-row md:gap-1 md:text-[18px] hover:text-[#7b7771fb] h-[40px] 
+    @apply flex flex-col items-center justify-center text-[16px] text-gray-700 px-0.5 sm:px-2 md:flex-row md:gap-1 md:text-[18px] hover:text-[#7b7771fb] h-[40px] 
   }
 
   .tag {

@@ -135,11 +135,11 @@ a {
   }
 
   .icon {
-    @apply text-[26px] md:text-[30px] text-gray-700 px-0.5 md:px-1 hover:text-[#7b7771fb] hover:text-[28px] md:hover:text-[32px]
+    @apply text-[26px] md:text-[30px] text-gray-700 px-0.5 md:px-1 hover:text-[#7b7771fb] hover:text-[28px] md:hover:text-[32px];
   }
 
   .icon_container {
-    @apply pt-[2%] flex justify-center
+    @apply h-[56px] pt-[2%] flex justify-center md:h-[66px];
   }
 
   .avatar {

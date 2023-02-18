@@ -55,7 +55,7 @@ a {
   }
 
  .section_layout {
-    @apply pt-40 px-[1%] md:px-[5%] lg:px-[8%];
+    @apply pt-40 px-[1%] md:px-[3%] lg:px-[8%];
   }
 
   .title {

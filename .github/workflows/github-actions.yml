@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI/CD
+name: Deploy of Portfolio
 
 # Controls when the workflow will run
 on:
@@ -15,18 +15,15 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run a one-line script
+        with:
+          cname: anila.me
+      - name: built
         run: npm run build
 
-
-  push-gh-pages:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
+      - name: push to github pages
         run: npm run push-gh-pages
-    needs: build
+      

@@ -67,7 +67,7 @@ a {
   }
 
   .index_about_section {
-    @apply px-[5%] pt-6 lg:pt-24 md:px-[3%] lg:flex lg:flex-wrap lg:justify-center;
+    @apply px-[3%] pt-6 lg:pt-24 md:px-[3%] lg:flex lg:flex-wrap lg:justify-center;
   }
 
   .index_about_image_container {
@@ -123,7 +123,7 @@ a {
   }
 
   .contact_content {
-    @apply text-[13px] sm:text-[14px] md:text-[16px];
+    @apply text-[15px] sm:text-[16px] md:text-[18px];
   }
 
   .contact_background {
@@ -167,7 +167,10 @@ a {
  }
 
   .social_icon {
-    @apply flex flex-col items-center justify-center text-[16px] text-gray-700 px-0.5 sm:px-2 md:flex-row md:gap-1 md:text-[18px] hover:text-[#7b7771fb] h-[40px] 
+    @apply flex flex-col items-center justify-center text-[24px] text-gray-700 md:flex-row md:gap-2 hover:text-[#7b7771fb]  h-[40px] xs:h-[46px] 
+  }
+  .social_icon_text {
+    @apply hidden xs:block text-[14px] md:text-[18px]
   }
 
   .tag {
